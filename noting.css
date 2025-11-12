@@ -1,0 +1,201 @@
+  * {
+    margin: 0;
+   padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica", sans-serif;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  .disclaimer {
+    font-size: 1.3rem;
+padding: 0.1em;
+width: 100%;
+position: fixed;
+z-index: 4;
+  /*  border: 3px solid black;*/
+    background-color: purple;
+    color: white;
+    overflow: hidden;
+    transition: all 1s;
+  }
+  .remove-disclaimer {
+    font-size: 2rem;
+    width: 60px;
+    margin: 10px auto 0 43%;
+    color: grey;
+  }
+  .disclaimer-remover {
+  display: none;
+  }
+  .disclaimer p {
+    margin-left: 0.3em;
+  }
+  
+  .top {
+    width: 20%;
+    background-color: green;
+    display: grid;
+    place-items: center;
+    font-size: 3rem;
+  }
+    .one {
+      overflow: hidden;
+      background-color: transparent;
+      position: fixed;
+      margin-top: 4em;
+    transition: height 1s, width 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    .list {
+      display: flex;
+  font-size: 1.3rem;
+      flex-direction: column;
+      padding: 0.6em;
+      position: relative;
+      left: -300px;
+      overflow: hidden;
+      transition: left 1s;
+    }
+  
+    .btn {
+      background-color: whitesmoke;
+      margin-left: 0.3em;
+      border-radius: 0.3em;
+      width: 100%;
+      font-size: inherit;
+      display: flex;
+      align-items: center;
+      margin-top: 0.2em;
+      padding: 0.3em;
+    }
+    .btn:active {
+      background-color: dimgray;
+      border: none;
+    }
+    .units-container {
+      padding-top: 5em;
+    }
+    .units {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    h1 {
+      margin: auto auto;
+    }
+    .specific {
+      padding: 1em;
+      font-size: 1.2rem;
+    width: 95%;
+    margin: 0.5em auto 0 auto;
+      background-color: wheat;
+      border: 2px solid green;
+    }
+.units button:focus {
+  background-color: grey;
+}
+    .upper {
+      display: flex;
+      position: fixed;
+      width: 100%;
+    
+    }
+    .uni-name {
+      background-color: grey;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+      align-items: center;
+      font-size: 1.5rem;
+    }
+    .uni-name p {
+      margin: 0.3em;
+    }
+    footer {
+      position: fixed;
+      display: grid;
+      padding: 0.5em;
+      width: 100%;
+      background-color: whitesmoke;
+      place-items: center;
+    bottom: 0;
+    }
+    .increase {
+      position: relative;
+      left: 0.2em;
+    }
+    .information {
+      margin: 0.5em 0.5em 3em 0.5em;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 0.2em;
+    font-size: 1.5rem;
+    background-color: cornsilk;
+    border-radius: 10px;
+    }
+.information p {
+  margin: 0.1em;
+  border-radius: 10px;
+}
+    .error {
+      font-size: 1.5rem;
+      width: 95%;
+      margin: auto auto;
+      color: grey;
+      border: 2px solid greenyellow;
+      padding: 0.3em;
+      border-radius: 10px;
+      background-color: gainsboro;
+    }
+    .notes-header {
+      width: 100%;
+      font-size: 2rem;
+      background-color: grey;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      position: fixed;
+    }
+    
+    .back-container {
+      width: 15%;
+      background-color: green;
+      display: grid;
+      place-items: center;
+      font-size: 3rem;
+    }
+    
+    .exam-heading {
+      font-size: 1.5rem;
+      background-color: purple;
+      color: white;
+      margin-bottom: 1.5em;
+      padding: 3em 1em 0.4em 0.2em;
+    }
+    
+    .exam-title {
+      font-size: 1.5rem;
+      padding: 1em;
+      margin: 0.5em;
+      border: 1px solid black;
+      background-color: papayawhip;
+    }
+    .exam-title:active {
+      background-color: darkgrey;
+    }
+    @media (orientation: landscape) {
+      .increase {
+        overflow: scroll;
+      }
+      .top {
+        width: 10%;
+      }
+    }

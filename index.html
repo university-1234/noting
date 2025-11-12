@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="get your courses notes, past papers and marking schemes all in one place" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Noting for you" />
+  <meta property="og:url" content="https://university-1234.github.io/noting/" />
+  <meta property="og:image" content="https://university-1234.github.io/noting-/IMG-20251111-WA0001.jpg" />
+  <title>Noting for you.</title>
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+    font-family: "Helvetica", sans-serif;
+  }
+  body {
+    background: linear-gradient(to top, orange, yellow);
+  }
+  header {
+   display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: grey;
+    padding: 0.6em;
+    position: fixed;
+    width: 100%;
+  }
+  header p {
+    font-size: inherit;
+margin-right: 1em;
+  }
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+      font-size: 2rem;
+    }
+  
+    div {
+      margin: 10px;
+      border-radius: 10px;
+      border: 2px dotted green;
+    text-align: center;
+    padding: 3px;
+    }
+  
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    #note {
+      font-size: 1.5rem;
+      padding: 1em;
+      margin: 0.5em;
+      border-radius: 10px;
+      box-shadow: 0px 0px 2px 10px green;
+      background: linear-gradient(to right, whitesmoke, white);
+    }
+    footer {
+      display: grid;
+      place-items: center;
+      width: 100%;
+      padding: 1em;
+      position: fixed;
+      bottom: 0;
+      background-color: whitesmoke;
+    }
+  </style>
+</head>
+
+<body>
+  <header><p>Noting for you</p></header>
+  <main>
+    <p id="note">Welcome to Noting for you. Please fill out the form before proceeding. The information will be used to specifically display your units for this semester.</p>
+    <div class="fill"><a href="notingDetailForm.html">fill form</a></div>
+    <div class="my-units"><a href="noting.html">view your courses</a></div>
+  </main>
+  <footer>
+    <p>&copy; 2025. Noting for you. All rights reserved</p>
+  </footer>
+  <script>
+  const myUnits = document.querySelector(".my-units");
+    const p = document.querySelector("#note");
+    const fill = document.querySelector(".fill");
+    const name = localStorage.getItem("name");
+
+    if (name) {
+  fill.innerHTML = "";
+  p.innerText = "";
+  fill.style.border = "none";
+    } else {
+      myUnits.innerText = "";
+      myUnits.style.border = "none";
+    };
+  </script>
+</body>
+
+</html>

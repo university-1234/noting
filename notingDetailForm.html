@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="get your courses notes, past papers and marking schemes all in one place" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Noting for you" />
+  <og property="og:url" content="https://university-1234.github.io/noting/" />
+  <title>form</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+  
+    header {
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      padding: 1em;
+      background-color: grey;
+      position: fixed;
+      width: 100%;
+      top: 0;
+    }
+    main {
+      font-size: 1.2rem;
+  margin-top: 110px;
+    }
+    main p {
+      margin: 10px;
+    }
+    input, #combination {
+      font-size: 1.5rem;
+      margin-bottom: 1em;
+      padding: 0.2em;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      transition: all 1s;
+    }
+    label {
+      font-size: 1.5rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      height: 50%;
+      padding: 1.5em;
+      margin-top: 1em;
+      border: 2px solid black;
+      background: radial-gradient(circle, purple, green);
+      color: white;
+    }
+    button {
+      padding: 0.5em;
+      font-size: 1.5rem;
+      width: 30%;
+      margin: 0.3em auto 0 auto;
+      border-radius: 1em;
+      background-color: gold;
+      color: rebeccapurple;
+    }
+    footer {
+      height: 3vh;
+      width: 100%;
+      position: relative;
+      top: 18em;
+      display: grid;
+      place-items: center;
+      color: green;
+      background-color: whitesmoke;
+    }
+  
+
+    button:active {
+      background-color: gray;
+      border: none;
+    }
+    /*#back {
+      font-size: 40px;
+      text-decoration: none;
+      color: black;
+      background-clip: none;
+    }*/
+    option {
+      width: 40%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <p class="backC" style="display:none"><a href="/index.html" id="back"><</a></p>
+    <h1>Noting for you</h1>
+  </header>
+  <main>
+    <p>The information you are providing will be used to display your specific units. PLEASE confirm if the information is correct by CLICKING the verify button before saving.</p>
+    <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required />
+    <label for="program">Program:</label>
+    <input type="text" id="program" placeholder="e.g Bachelor of Education Science" />
+    <label for="combination">Subject combination:</label>
+    <select id="combination">
+      <option value="">None</option>
+      <option value="chem/phyc">Chemistry & Physics</option>
+      <option value="chem/bio">Chemistry & Biology</option>
+      <option value="math/chem">Mathematics & Chemistry</option>
+      <option value="math/bio">Mathematics & Biology</option>
+      <option value="math/phyc">Mathematics & Physics</option>
+        <option value="bio/phyc">Biology & Physics</option>
+      <option value="eng/lit">English & Literature</option>
+      <option value="kis/cre">Kiswahili & C R E</option>
+      <option value="kis/his">Kiswahili & History</option>
+      <option value="kis/geo">Kiswahili & Geography</option>
+      <option value="geo/cre">Geography & C R E</option>
+      <option value="his/cre">History & C R E</option>
+      <option value="geo/his">Geography & History</option>
+      <option value="geo/bus">Geography & Business Studies</option>    
+      <option value="bio/geo">Biology & Geography</option>
+      <option value="agric/geo">Agriculture & Geography</option>
+      <option value="agric/bio">Agriculture & Biology</option>
+      <option value="agric/chem">Agriculture & Chemistry</option>
+      <option value="math/geo">Mathematics & Geography </option>
+      <option value="math/bus">Mathematics & Business</option>
+      <option value="his/bus">History & Business</option>
+      <option value="kis/bus">Bussiness & Kiswahili</option>
+    </select>
+    <label for="year">Year of study:</label>
+    <input type="number" id="year" min="1" max="4" />
+    <label for="semester">Semester:</label>
+    <input type="number" min="1" max="2" id="semester" />
+    <button type="button" id="approve">verify</button>
+    <button type="button" id="save">Save</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2025. Noting for you. All rights reserved.</p>
+  </footer>
+  <script src="verify.js" type="module" >
+  </script>
+</body>
+
+</html>

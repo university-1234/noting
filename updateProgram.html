@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>update program form</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Helvetica", sans-serif;
+    }
+  h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2em;
+  }
+
+  form {
+    margin-top: 2em;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    margin: auto auto;
+    width: 90%;
+    background-color: wheat;
+  }
+  input, select {
+    padding: 0.1em;
+    font-size: 1.3rem;
+    outline: none;
+    border: 2px solid green;
+    border-radius: 10px;
+    color: dimgrey;
+  }
+  label {
+    margin-top: 0.5em;
+  }
+  button {
+    font-size: 1.5rem;
+    width: 42%;
+    margin: 1em auto 0 29%;
+    padding: 0.5em;
+    border-radius: 10px;
+    border: none;
+  }
+  button:active {
+    background-color: green;
+  }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Program Update Form</h1>
+    <form>
+    <label for="new-program">New program:</label>
+    <input type="text" id="new-program" />
+    <label for="new-combination">Combination:</label>
+    <select id="new-combination">
+            <option value="">None</option>
+      <option value="chem/phyc">Chemistry & Physics</option>
+      <option value="chem/bio">Chemistry & Biology</option>
+      <option value="math/chem">Mathematics & Chemistry</option>
+      <option value="math/bio">Mathematics & Biology</option>
+      <option value="math/phyc">Mathematics & Physics</option>
+        <option value="bio/phyc">Biology & Physics</option>
+      <option value="eng/lit">English & Literature</option>
+      <option value="kis/cre">Kiswahili & C R E</option>
+      <option value="kis/his">Kiswahili & History</option>
+      <option value="kis/geo">Kiswahili & Geography</option>
+      <option value="geo/cre">Geography & C R E</option>
+      <option value="his/cre">History & C R E</option>
+      <option value="geo/his">Geography & History</option>
+      <option value="geo/bus">Geography & Business Studies</option>    
+      <option value="bio/geo">Biology & Geography</option>
+      <option value="agric/geo">Agriculture & Geography</option>
+      <option value="agric/bio">Agriculture & Biology</option>
+      <option value="agric/chem">Agriculture & Chemistry</option>
+      <option value="math/geo">Mathematics & Geography </option>
+      <option value="math/bus">Mathematics & Business</option>
+      <option value="his/bus">History & Business</option>
+      <option value="kis/bus">Bussiness & Kiswahili</option>
+    </select>
+    </form>
+    <div>
+       <button id="updateProBut">update</button>
+       </div>
+  </main>
+  <script src="programUpdate.js" type="module" defer></script>
+</body>
+
+</html>
